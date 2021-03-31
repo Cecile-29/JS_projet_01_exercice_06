@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="vieport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>JS/projet_01/exercice_06</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>exercice_06</h1>
+      <p>Créez un champ pour entrer un âge.</p>
+      <p>Au clic sur un bouton une modale doit afficher "Vous êtes majeur" ou "vous êtes mineur" suivant l'âge entré dans le champ.</p>
+      <div class="row col-12 d-flex justify-content-center">
+        <div>
+          <!-- <form class="" action="index.html" method="post">
+            <p class="text-center pt-4">ENTREZ VOTRE AGE :</p>
+            <p><input type="text" id="age" value="" required></p>
+            <p class="d-flex justify-content-center"><button class="btn btn-danger" onclick="displayInput()">VALIDEZ !</button></p></div>
+          </form> -->
+          <!-- correction Agnès -->
+          <form>
+            <input type="number" name="" id="age">
+            <input type="button" name="" onclick="displayAge()" value="Validez !">
+            <!-- <button class="btn btn-primary" onclick="displayAge()">VALIDEZ !</button> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- *********************correction Agnès avec fichier.js
+
+    <script>
+    function displayAge(){
+      var age = document.getElementById('age').value;
+      //si la variable 'age' exist
+      if (age){
+        // si age est supérieur à 0
+        if (age > 0){
+          // si age est supérieur ou égal à 18
+          if (age >= 18){
+            //alors une moal affiche 'vous êtes majeur !'
+            alert('Vous êtes majeur !');
+            // sinon une modal affiche 'Vous êtes mineur !'
+          }
+          else{
+            alert('Vous êtes mineur !');
+          }
+          // si la conditon ligne 35, n'est pas remplie
+          //une modale demande de rentrer un âge valide
+          }
+      else{
+        alert('Veuillez rentrer un âge valide, merci !');
+          }
+      // si la condition de la ligne 33 n'est pas remplie(si âge n'existe pas)
+      // alors on demande à l'utilisateur de remplir des champs valides
+      }else {
+        alert('Veuillez remplir le champ avec des chiffres ou des nombres, merci !');
+      }
+    }
+    </script> -->
+    <!-- <script type="text/javascript" src="script.js"> -->
+
+    <!-- </script> -->
+    <!-- <script type="text/javascript>
+
+
+      // ********* fonction de Cécile qui fonctionne aussi ************
+      // function displayInput(){
+      //   var inputNumber = document.getElementById('age').value;
+      //   if(isNaN(inputNumber)){
+      //     alert('Veuillez remplir le champ avec des chiffres, merci !');
+      //   }
+      //   else if((inputNumber >= 18) && (inputNumber <= 155)){
+      //     alert('Vous êtes majeur !');
+      //   }
+      //   else if(inputNumber <= 17){
+      //     alert('Vous êtes mineur !');
+      //   }
+      //   else if(inputNumber <= 156){
+      //     alert('Vous êtes une tortue !');
+      //   }
+      // }
+    </script> -->
+  </body>
+</html>
